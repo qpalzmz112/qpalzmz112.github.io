@@ -22,7 +22,6 @@ function changeTextSpacing() {
 }
 
 function reverseText() {
-    document.getElementById("textReverse").innerHTML = "I'm a Northwestern double majoring in computer science and mathematics";
     let text = document.getElementById("textReverse").innerHTML;
     let originalSelection = window.getSelection().toString();
     let selectionCopy = window.getSelection().toString();
@@ -30,6 +29,5 @@ function reverseText() {
     selectionCopy = selectionCopy.reverse();
     selectionCopy = selectionCopy.join();
     selectionCopy = selectionCopy.replaceAll(',', '');
-    text.replace(originalSelection, selectionCopy);
     document.getElementById("textReverse").innerHTML = text.replace(originalSelection, selectionCopy);
 }
