@@ -50,7 +50,7 @@ function undoReverseText() {
     if (window.getSelection().isCollapsed) {
         while (originalSelections.length > 0) {
             sleep(500).then(() => {
-                element.innerHTML = text.replace(originalSelections.shift(), reversedSelections.shift());
+                element.innerHTML = element.innerHTML.replace(originalSelections.shift(), reversedSelections.shift());
             })
         }
         
