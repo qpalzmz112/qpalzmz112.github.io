@@ -23,9 +23,10 @@ function changeTextSpacing() {
 
 function reverseText() {
     let string = document.getElementById("textReverse");
-    string = string.split("");
-    string = string.reverse();
-    string = string.join();
-    console.log(string);
+    let selection = window.getSelection().toString();
+    selection = selection.split("");
+    selection = selection.reverse();
+    selection = selection.join();
+    console.log(selection);
     console.log("a");
 }
