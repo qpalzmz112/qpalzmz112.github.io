@@ -7,6 +7,7 @@ function handleSelectionChange() {
     let selection = window.getSelection();
     let selectedElement = selection.parentElement;
     console.log(selectedElement.id);
+    console.log("a");
 }
 
 
