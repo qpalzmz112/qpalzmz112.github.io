@@ -1,4 +1,16 @@
-document.getElementById("textSpacing").addEventListener('selectionchange', changeTextSpacing)
+document.onselectionchange = () => {
+    console.log("selection change detected");
+    handleSelectionChange();
+}
+
+function handleSelectionChange() {
+    let selection = window.getSelection();
+    let selectedElement = selection.parentElement;
+    console.log(selectedElement.id);
+}
+
+
+
 
 function changeTextSpacing() {
     let string = window.getSelection().toString();
