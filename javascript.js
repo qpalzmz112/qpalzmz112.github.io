@@ -1,5 +1,4 @@
 document.onselectionchange = () => {
-    console.log("selection change detected");
     handleSelectionChange();
 }
 
@@ -19,5 +18,14 @@ function handleSelectionChange() {
 
 function changeTextSpacing() {
     let string = window.getSelection().toString();
-    document.getElementById("textSpacing").style.letterSpacing = string.length()/2 + "px"
+    document.getElementById("textSpacing").style.letterSpacing = string.length/2 + "px"
+}
+
+function reverseText() {
+    let string = document.getElementById("textReverse");
+    string = string.split("");
+    string = string.reverse();
+    string = string.join();
+    console.log(string);
+    console.log("a");
 }
