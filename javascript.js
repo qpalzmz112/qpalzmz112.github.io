@@ -28,5 +28,6 @@ function reverseText() {
     selectionCopy = selectionCopy.split("");
     selectionCopy = selectionCopy.reverse();
     selectionCopy = selectionCopy.join();
+    selectionCopy = selectionCopy.replaceAll(',', '');
     text.replace(originalSelection, selectionCopy);
 }
