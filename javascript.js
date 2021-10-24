@@ -22,11 +22,11 @@ function changeTextSpacing() {
 }
 
 function reverseText() {
-    let string = document.getElementById("textReverse");
-    let selection = window.getSelection().toString();
-    selection = selection.split("");
-    selection = selection.reverse();
-    selection = selection.join();
-    console.log(selection);
-    console.log("a");
+    let text = document.getElementById("textReverse").innerHTML;
+    let originalSelection = window.getSelection().toString();
+    let selectionCopy = window.getSelection().toString();
+    selectionCopy = selectionCopy.split("");
+    selectionCopy = selectionCopy.reverse();
+    selectionCopy = selectionCopy.join();
+    text.replace(originalSelection, selectionCopy);
 }
