@@ -3,8 +3,10 @@ document.onselectionchange = () => {
 }
 
 function handleSelectionChange() {
-    let selection = window.getSelection();
-    let selectedElement = selection.focusNode.parentElement;
+    if (window.getSelection().isCollapsed) {
+        document.getElementById("textReverse").innerHTML = "I'm a Northwestern double majoring in computer science and mathematics"
+    }
+    let selectedElement = window.getSelection().focusNode.parentElement;
     switch (selectedElement.id) {
         case "textSpacing":
             changeTextSpacing();
@@ -21,6 +23,9 @@ function changeTextSpacing() {
 }
 
 function reverseText() {
+    if (window.getSelection().isCollapsed) {
+        document.getElementById("textReverse").innerHTML = "I'm a Northwestern double majoring in computer science and mathematics"
+    }
     let text = document.getElementById("textReverse").innerHTML;
     let originalSelection = window.getSelection().toString();
     if (originalSelection.length == 1) {
