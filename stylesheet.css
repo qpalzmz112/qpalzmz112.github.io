@@ -7,13 +7,16 @@ a {
     color: yellow;
 }
 
+p {
+    margin: 1px;
+}
+
 ::selection {
     background: teal;
-    color: 
 }
 
 .changeOnSelect {
-    font-size: 48px;
+    font-size: 36px;
 }
 
 
