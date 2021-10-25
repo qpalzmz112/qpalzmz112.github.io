@@ -4,7 +4,10 @@ document.onselectionchange = () => {
 
 function handleSelectionChange() {
     if (window.getSelection().isCollapsed) {
-        document.getElementById("textReverse").innerHTML = "I'm a Northwestern double majoring in computer science and mathematics"
+        document.getelementById("textSpacing").style.letterSpacing = "0px";
+        document.getElementById("textReverse").innerHTML = "I'm a Northwestern double majoring in computer science and mathematics";
+        document.getElementById("fontChange").style.fontFamily = "'Space Mono', monospace";
+        document.getElementById("colorChange").style.color = "white";
     }
     let selectedElement = window.getSelection().focusNode.parentElement;
     switch (selectedElement.id) {
