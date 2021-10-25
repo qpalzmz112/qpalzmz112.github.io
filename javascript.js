@@ -1,5 +1,3 @@
-let alreadyCalled = false;
-
 document.onselectionchange = () => {
     handleSelectionChange();
 }
@@ -22,12 +20,9 @@ function changeTextSpacing() {
     document.getElementById("textSpacing").style.letterSpacing = string.length/2 + "px"
 }
 
-let originalSelections = [];
-let reversedSelections = [];
 function reverseText() {
     let text = document.getElementById("textReverse").innerHTML;
     let originalSelection = window.getSelection().toString();
-    originalSelections.unshift(originalSelection);
     if (originalSelection.length == 1) {
         return;
     }
@@ -36,31 +31,9 @@ function reverseText() {
     selectionCopy = selectionCopy.reverse();
     selectionCopy = selectionCopy.join();
     selectionCopy = selectionCopy.replaceAll(',', '');
-    reversedSelections.unshift(selectionCopy);
-    document.getElementById("textReverse").innerHTML = text.replace(originalSelection, selectionCopy);
-    if (!alreadyCalled) {
-        undoReverseText();
-    }
     
+    document.getElementById("textReverse").innerHTML = text.replace(originalSelection, selectionCopy);
 }
+    
 
-function undoReverseText() {
-    const element = document.getElementById("textReverse");
-    alreadyCalled = true;
-    if (window.getSelection().isCollapsed) {
-        while (originalSelections.length > 0) {
-            sleep(500).then(() => {
-                element.innerHTML = element.innerHTML.replace(originalSelections.shift(), reversedSelections.shift());
-            })
-        }
-        
-    }
-    else {
-        setTimeout(undoReverseText, 1000);
-    }
-    alreadyCalled = false;
-}
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
