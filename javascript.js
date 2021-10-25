@@ -8,7 +8,7 @@ function handleSelectionChange() {
         document.getElementById("textReverse").innerHTML = "I'm a Northwestern double majoring in computer science and mathematics";
         document.getElementById("fontChange").style.fontFamily = "'Space Mono', monospace";
         document.getElementById("colorChange").style.color = "white";
-        document.getElementById("changeFontWeight").style.fontWeight = "400";
+        document.getElementById("fontWeightChange").style.fontWeight = "400";
     }
     let selectedElement = window.getSelection().focusNode.parentElement;
     switch (selectedElement.id) {
@@ -78,7 +78,7 @@ function changeColor() {
 
 function changeFontWeight() {
     let selectionLength = window.getSelection().toString().length;
-    document.getElementById("fontWeightChange").style.fontWeight = 400 + 2 * selectionLength;
+    document.getElementById("fontWeightChange").style.fontWeight = 400 + 12 * selectionLength;
 }
     
 
