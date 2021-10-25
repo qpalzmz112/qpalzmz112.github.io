@@ -8,7 +8,7 @@ function handleSelectionChange() {
         document.getElementById("textReverse").innerHTML = "I'm a Northwestern double majoring in computer science and mathematics";
         document.getElementById("fontChange").style.fontFamily = "'Space Mono', monospace";
         document.getElementById("colorChange").style.color = "white";
-        document.getElementById("fontWeightChange").style.fontWeight = "400";
+        document.getElementById("fontSizeChange").style.fontSize = "36px";
     }
     let selectedElement = window.getSelection().focusNode.parentElement;
     switch (selectedElement.id) {
@@ -24,8 +24,8 @@ function handleSelectionChange() {
         case "colorChange":
             changeColor();
             break;
-        case "fontWeightChange":
-            changeFontWeight();
+        case "fontSizeChange":
+            changeFontSize();
             break;
     }
 }
@@ -76,9 +76,9 @@ function changeColor() {
     document.getElementById("colorChange").style.color = colors[selectionLength % 10];
 }
 
-function changeFontWeight() {
+function changeFontSize() {
     let selectionLength = window.getSelection().toString().length;
-    document.getElementById("fontWeightChange").style.fontWeight = 400 + 12 * selectionLength;
+    document.getElementById("fontSizeChange").style.fontSize = 36 + selectionLength/4 + "px";
 }
     
 
