@@ -15,7 +15,7 @@
 #backgroundImage {
     z-index: 0;
     opacity: 60%;
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
 }
