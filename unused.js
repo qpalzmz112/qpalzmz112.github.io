@@ -13,11 +13,11 @@
     z- index: 1;
 }
 #backgroundImage {
-    z - index: 0;
-    opacity: 60 %;
+    z-index: 0;
+    opacity: 60%;
     position: relative;
-    width: 100 %;
-    height: 100 %;
+    width: 100%;
+    height: 100%;
 }
 .imageSource {
     position: absolute;
