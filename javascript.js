@@ -14,6 +14,9 @@ function handleSelectionChange() {
         case "textReverse":
             reverseText();
             break;
+        case "fontChange":
+            changeFont();
+            break;
     }
 }
 
@@ -38,6 +41,22 @@ function reverseText() {
     selectionCopy = selectionCopy.replaceAll(',', '');
     
     document.getElementById("textReverse").innerHTML = text.replace(originalSelection, selectionCopy);
+}
+
+let fonts = [];
+fonts.push("'Orbitron', sans-serif");
+fonts.push("'Play', sans-serif");
+fonts.push("'VT323', monospace");
+fonts.push("'Share Tech Mono', monospace");
+fonts.push("'Major Mono Display', monospace");
+fonts.push("'Nova Mono', monospace");
+fonts.push("'Space Mono', monospace");
+fonts.push("'Poiret One', cursive");
+fonts.push("'Unica One', cursive");
+
+function changeFont() {
+    let selectionLength = window.getSelection().toString().length;
+    document.getElementById("fontChange").style.fontFamily = fonts[selectionLength % 10];
 }
     
 

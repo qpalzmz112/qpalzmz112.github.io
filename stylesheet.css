@@ -3,3 +3,11 @@ body {
     background: black;
     color: white;
 }
+a {
+    color: yellow;
+}
+
+::selection {
+    background: teal;
+    
+}
