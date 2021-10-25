@@ -9,5 +9,11 @@ a {
 
 ::selection {
     background: teal;
-    
+    color: 
 }
+
+.changeOnSelect {
+    font-size: 48px;
+}
+
+

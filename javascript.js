@@ -17,6 +17,9 @@ function handleSelectionChange() {
         case "fontChange":
             changeFont();
             break;
+        case "colorChange":
+            changeColor();
+            break;
     }
 }
 
@@ -57,6 +60,13 @@ fonts.push("'Unica One', cursive");
 function changeFont() {
     let selectionLength = window.getSelection().toString().length;
     document.getElementById("fontChange").style.fontFamily = fonts[selectionLength % 10];
+}
+
+let colors = ["coral", "cornflowerblue", "darkgoldenrod", "firebrick", "khaki", "orchid", "olivedrab", "yellowgreen", "wheat", "lilac"];
+
+function changeColor() {
+    let selectionLength = window.getSelection().toString().length;
+    document.getElementById("colorChange").style.color = colors[selectionLength % 10];
 }
     
 
