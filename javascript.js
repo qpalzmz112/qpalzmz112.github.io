@@ -8,7 +8,7 @@ function handleSelectionChange() {
         document.getElementById("textReverse").innerHTML = "I'm a Northwestern double majoring in computer science and mathematics";
         document.getElementById("fontChange").style.fontFamily = "'Space Mono', monospace";
         document.getElementById("colorChange").style.color = "white";
-        document.getElementById("fontSizeChange").style.fontSize = "36px";
+        document.getElementById("fontSizeChange").style.fontSize = "28px";
     }
     let selectedElement = window.getSelection().focusNode.parentElement;
     switch (selectedElement.id) {
