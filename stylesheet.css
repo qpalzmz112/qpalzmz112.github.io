@@ -1,5 +1,5 @@
 #mainText {
-    position: absolute;
+    position: relative;
     top: 0;
 }
 #backgroundImage {
@@ -13,6 +13,10 @@
 }
 #topBar {
     height: 40px;
+    text-align: center;
+}
+#email {
+    color: white;
 }
 
 body {
@@ -35,5 +39,6 @@ p {
 .changeOnSelect {
     font-size: 28px;
 }
+
 
 
