@@ -39,7 +39,7 @@ function reverseText() {
     if (window.getSelection().isCollapsed) {
         document.getElementById("textReverse").innerHTML = "I'm a Northwestern double majoring in computer science and mathematics"
     }
-    let text = document.getElementById("textReverse").innerHTML;
+    let text = "I'm a Northwestern double majoring in computer science and mathematics";
     let originalSelection = window.getSelection().toString();
     if (originalSelection.length == 1) {
         return;
