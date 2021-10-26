@@ -9,7 +9,10 @@
     width: 100%;
     height: 100%;
     background: rgb(98,70,116);
-    background: linear-gradient(0deg, rgba(98,70,116,1) 0%, rgba(57,31,143,1) 53%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(0deg, rgba(98,70,116,1) 0%, rgba(57,31,143,1) 20%, rgba(0,0,0,1) 100%);
+}
+#topBar {
+    height: 40px;
 }
 
 body {
@@ -30,7 +33,7 @@ p {
 }
 
 .changeOnSelect {
-    font-size: 36px;
+    font-size: 28px;
 }
 
 
