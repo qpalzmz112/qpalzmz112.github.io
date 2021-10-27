@@ -22,7 +22,8 @@
 .imageSource {
     position: absolute;
     bottom: 0;
-    ri
+    right: 0;
+    }
         < div id = "backgroundImage" >
             <img src="/aerial cityscape(1440p).jpeg" />
             <a class="imageSource" href="https://www.pexels.com/photo/bird-s-eye-view-of-city-during-dawn-2093323/" >Image Source</a>
