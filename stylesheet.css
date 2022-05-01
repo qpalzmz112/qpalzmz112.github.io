@@ -31,8 +31,8 @@
 
 body {
     font-family: 'Space Mono', monospace;
-    background: black;
-    color: white;  
+    background: white;
+    color: darkslateblue;  
 }
 a {
     color: yellow;
