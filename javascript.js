@@ -7,7 +7,7 @@ function handleSelectionChange() {
         document.getElementById("textSpacing").style.letterSpacing = "0px";
         document.getElementById("textReverse").innerHTML = "I'm a Northwestern double majoring in computer science and mathematics";
         document.getElementById("fontChange").style.fontFamily = "'Space Mono', monospace";
-        document.getElementById("colorChange").style.color = "white";
+        document.getElementById("colorChange").style.color = "darkslateblue";
         document.getElementById("fontSizeChange").style.fontSize = "28px";
     }
     let selectedElement = window.getSelection().focusNode.parentElement;
