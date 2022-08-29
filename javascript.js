@@ -41,21 +41,17 @@ function reverseText() {
         return;
     }
     let text = "I'm a Northwestern double majoring in computer science and mathematics";
-    let originalSelection = window.getSelection().toString();
-    if (originalSelection.length == 1) {
+    let selection = window.getSelection().toString();
+    if (selection.length == 1) {
         return;
     }
-    let selectionCopy = window.getSelection().toString();
-    selectionCopy = selectionCopy.split("");
-    selectionCopy = selectionCopy.reverse();
-    selectionCopy = selectionCopy.join();
-    selectionCopy = selectionCopy.replaceAll(',', '');
-    console.log("original selection len: " + originalSelection.length.toString());
-    console.log("selection copy len: " + selectionCopy.length.toString());
-    if (text.replace(originalSelection, selectionCopy).valueOf() == text.valueOf()) { // stop un-reversing the text 
-        return;
-    }
-    document.getElementById("textReverse").innerHTML = text.replace(originalSelection, selectionCopy);
+    let fromText = text.slice(0, selection.length);
+    let copy = fromText.slice() // make a copy of fromText
+    copy = copy.split("");
+    copy = copy.reverse();
+    copy = copy.join();
+    copy = copy.replaceAll(',', '');
+    document.getElementById("textReverse").innerHTML = text.replace(fromText, copy);
 }
 
 let fonts = [];
