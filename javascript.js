@@ -50,7 +50,7 @@ function reverseText() {
     selectionCopy = selectionCopy.reverse();
     selectionCopy = selectionCopy.join();
     selectionCopy = selectionCopy.replaceAll(',', '');
-    if (text.replace(originalSelection, selectionCopy) == text) { // stop un-reversing the text 
+    if (text.replace(originalSelection, selectionCopy).valueOf() == text.valueOf()) { // stop un-reversing the text 
         return;
     }
     document.getElementById("textReverse").innerHTML = text.replace(originalSelection, selectionCopy);
