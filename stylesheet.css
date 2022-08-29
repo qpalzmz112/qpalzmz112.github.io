@@ -31,6 +31,10 @@
     top: 0;
 }
 
+#container {
+    position: relative;
+}
+
 body {
     font-family: 'Space Mono', monospace;
     background: white;
