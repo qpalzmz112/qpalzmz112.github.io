@@ -4,11 +4,25 @@ document.onselectionchange = () => {
 
 function handleSelectionChange() {
     if (window.getSelection().isCollapsed) {
-        document.getElementById("textSpacing").style.letterSpacing = "0px";
-        document.getElementById("textReverse").innerHTML = "I'm a Northwestern double majoring in computer science and mathematics.";
-        document.getElementById("fontChange").style.fontFamily = "'Space Mono', monospace";
-        document.getElementById("colorChange").style.color = "darkslateblue";
-        document.getElementById("fontSizeChange").style.fontSize = "28px";
+        let anchor = window.getSelection().anchorNode.parentElement;
+        switch (anchor.id) {
+            case "textSpacing":
+                document.getElementById("textSpacing").style.letterSpacing = "0px";
+                break;
+            case "textReverse":
+                document.getElementById("textReverse").innerHTML = "I'm a Northwestern student double majoring in computer science and mathematics.";
+                break;
+            case "fontChange":
+                document.getElementById("fontChange").style.fontFamily = "'Space Mono', monospace";
+                break;
+            case "colorChange":
+                document.getElementById("colorChange").style.color = "darkslateblue";
+                break;
+            case "fontSizeChange":
+                document.getElementById("fontSizeChange").style.fontSize = "28px";
+                break;
+        }
+        return;
     }
     let selectedElement = window.getSelection().focusNode.parentElement;
     switch (selectedElement.id) {
