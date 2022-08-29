@@ -50,6 +50,8 @@ function reverseText() {
     selectionCopy = selectionCopy.reverse();
     selectionCopy = selectionCopy.join();
     selectionCopy = selectionCopy.replaceAll(',', '');
+    console.log("original selection len: " + originalSelection.length.toString());
+    console.log("selection copy len: " + selectionCopy.length.toString());
     if (text.replace(originalSelection, selectionCopy).valueOf() == text.valueOf()) { // stop un-reversing the text 
         return;
     }
