@@ -24,12 +24,17 @@
     color: white;
 }
 
+#textReverse {
+    white-space: nowrap;
+}
+
 #invisibleReverse {
     z-index: 1;
     visibility: hidden;
     position: absolute;
     top: -20px;
     font-size: 28px;
+    white-space: nowrap;
 }
 
 #container {
