@@ -38,6 +38,7 @@ function changeTextSpacing() {
 function reverseText() {
     if (window.getSelection().isCollapsed) {
         document.getElementById("textReverse").innerHTML = "I'm a Northwestern double majoring in computer science and mathematics"
+        return;
     }
     let text = "I'm a Northwestern double majoring in computer science and mathematics";
     let originalSelection = window.getSelection().toString();
