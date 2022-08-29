@@ -52,6 +52,7 @@ function changeTextSpacing() {
 function reverseText() {
     if (window.getSelection().isCollapsed) {
         document.getElementById("textReverse").innerHTML = "I'm a Northwestern student double majoring in computer science and mathematics."
+        document.getElementById("invisibleReverse").innerHTML = "I'm a Northwestern student double majoring in computer science and mathematics."
         return;
     }
     let text = "I'm a Northwestern student double majoring in computer science and mathematics.";
@@ -66,6 +67,7 @@ function reverseText() {
     copy = copy.join();
     copy = copy.replaceAll(',', '');
     document.getElementById("textReverse").innerHTML = text.replace(fromText, copy);
+    document.getElementById("invisibleReverse").innerHTML = text.replace(fromText, copy);
 }
 
 let fonts = [];
