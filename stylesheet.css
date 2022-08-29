@@ -24,6 +24,13 @@
     color: white;
 }
 
+#invisibleReverse {
+    z-index: 1;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+}
+
 body {
     font-family: 'Space Mono', monospace;
     background: white;
