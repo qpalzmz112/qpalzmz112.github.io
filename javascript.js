@@ -5,7 +5,7 @@ document.onselectionchange = () => {
 function handleSelectionChange() {
     if (window.getSelection().isCollapsed) {
         document.getElementById("textSpacing").style.letterSpacing = "0px";
-        document.getElementById("textReverse").innerHTML = "I'm a Northwestern double majoring in computer science and mathematics";
+        document.getElementById("textReverse").innerHTML = "I'm a Northwestern double majoring in computer science and mathematics.";
         document.getElementById("fontChange").style.fontFamily = "'Space Mono', monospace";
         document.getElementById("colorChange").style.color = "darkslateblue";
         document.getElementById("fontSizeChange").style.fontSize = "28px";
@@ -37,10 +37,10 @@ function changeTextSpacing() {
 
 function reverseText() {
     if (window.getSelection().isCollapsed) {
-        document.getElementById("textReverse").innerHTML = "I'm a Northwestern double majoring in computer science and mathematics"
+        document.getElementById("textReverse").innerHTML = "I'm a Northwestern double majoring in computer science and mathematics."
         return;
     }
-    let text = "I'm a Northwestern double majoring in computer science and mathematics";
+    let text = "I'm a Northwestern double majoring in computer science and mathematics.";
     let selection = window.getSelection().toString();
     if (selection.length == 1) {
         return;
