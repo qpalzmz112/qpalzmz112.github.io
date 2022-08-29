@@ -28,7 +28,8 @@
     z-index: 1;
     visibility: hidden;
     position: absolute;
-    top: 0;
+    top: -20px;
+    font-size: 28px;
 }
 
 #container {
