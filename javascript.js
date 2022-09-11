@@ -21,6 +21,9 @@ function handleSelectionChange() {
             case "fontSizeChange":
                 document.getElementById("fontSizeChange").style.fontSize = "28px";
                 break;
+            case "backgroundChange":
+                document.getElementById("backgroundChange").style.backgroundColor = "white";
+                break;
         }
         return;
     }
@@ -40,6 +43,9 @@ function handleSelectionChange() {
             break;
         case "fontSizeChange":
             changeFontSize();
+            break;
+        case "backgroundChange":
+            changeBackground();
             break;
     }
 }
@@ -90,6 +96,11 @@ function changeColor() {
     let selectionLength = window.getSelection().toString().length;
     document.getElementById("colorChange").style.color = colors[selectionLength % 10];
 }
+
+function changeBackground() {
+    let selectionLength = window.getSelection().toString().length;
+    document.getElementById("backgroundChange".style.backgroundColor = colors[selectionLength % 10];
+}                
 
 function changeFontSize() {
     let selectionLength = window.getSelection().toString().length;
