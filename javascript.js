@@ -99,7 +99,7 @@ function changeColor() {
 
 function changeBackground() {
     let selectionLength = window.getSelection().toString().length;
-    document.getElementById("backgroundChange".style.backgroundColor = colors[selectionLength % 10];
+    document.getElementById("backgroundChange").style.backgroundColor = colors[selectionLength % 10];
 }                
 
 function changeFontSize() {
