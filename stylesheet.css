@@ -29,6 +29,10 @@ a {
     color: teal;
 }
 
+.project-link {
+    margin: 20px;
+}
+
 p {
     margin: 20px;
 }

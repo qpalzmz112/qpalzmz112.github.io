@@ -19,7 +19,7 @@ function dropDown(id) {
 function handleSelectionChange() {
     if (window.getSelection().isCollapsed) {
         let anchor = window.getSelection().anchorNode.parentElement;
-        switch (anchor.id.split(' ')[0] {
+        switch (anchor.id.split(' ')[0]) {
             case "textSpacing":
                 document.getElementById(anchor.id).style.letterSpacing = "0px";
                 break;
@@ -42,7 +42,7 @@ function handleSelectionChange() {
         return;
     }
     let selectedElement = window.getSelection().focusNode.parentElement;
-    switch (selectedElement.id.split(' ')[0] {
+    switch (selectedElement.id.split(' ')[0]) {
         case "textSpacing":
             changeTextSpacing(selectedElement.id);
             break;
