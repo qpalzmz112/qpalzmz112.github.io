@@ -10,10 +10,13 @@ backgroundClick.addEventListener("click", () => {
             dropDowns[i].classList.remove('show');
         }
     }
+    if (backgroundClick.classList.contains('show')) {
+        backgroundClick.classList.remove('show');
+    }
 })
 
 function dropDown(id) {
-    document.getElementById("backgroundClick").classList.toggle("show");
+    backgroundClick.classList.toggle("show");
     document.getElementById(id).classList.toggle("show");
 }
 
