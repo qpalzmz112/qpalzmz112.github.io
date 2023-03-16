@@ -2,16 +2,15 @@ document.onselectionchange = () => {
     handleSelectionChange();
 }
 
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-      let dropDowns = document.getElementsByClassName("dropdown-content");
-      for (let i = 0; i < dropDowns.length; i++) {
-          if (dropDowns[i].classList.contains('show')) {
-              dropDowns[i].classList.remove('show');
-          }
-      }
-  }
-}
+let backgroundClick = document.getElementById("backgroundClick");
+backgroundClick.addEventListener("click", () => {
+    let dropDowns = document.getElementsByClassName("dropdown-content");
+    for (let i = 0; i < dropDowns.length; i++) {
+        if (dropDowns[i].classList.contains('show')) {
+            dropDowns[i].classList.remove('show');
+        }
+    }
+})
 
 function dropDown(id) {
     document.getElementById(id).classList.toggle("show");
@@ -20,24 +19,24 @@ function dropDown(id) {
 function handleSelectionChange() {
     if (window.getSelection().isCollapsed) {
         let anchor = window.getSelection().anchorNode.parentElement;
-        switch (anchor.id) {
+        switch (anchor.id.split(' ')[0] {
             case "textSpacing":
-                document.getElementById("textSpacing").style.letterSpacing = "0px";
+                document.getElementById(anchor.id).style.letterSpacing = "0px";
                 break;
             case "textReverse":
-                document.getElementById("textReverse").innerHTML = "I'm a Northwestern student double majoring in computer science and mathematics.";
+                document.getElementById(anchor.id).innerHTML = "I'm a Northwestern student double majoring in computer science and mathematics.";
                 break;
             case "fontChange":
-                document.getElementById("fontChange").style.fontFamily = "'Space Mono', monospace";
+                document.getElementById(anchor.id).style.fontFamily = "'Space Mono', monospace";
                 break;
             case "colorChange":
-                document.getElementById("colorChange").style.color = "darkslateblue";
+                document.getElementById(anchor.id).style.color = "darkslateblue";
                 break;
             case "fontSizeChange":
-                document.getElementById("fontSizeChange").style.fontSize = "28px";
+                document.getElementById(anchor.id).style.fontSize = "28px";
                 break;
             case "backgroundChange":
-                document.getElementById("backgroundChange").style.backgroundColor = "white";
+                document.getElementById(anchor.id).style.backgroundColor = "white";
                 break;
         }
         return;
