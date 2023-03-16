@@ -37,13 +37,13 @@ p {
     background: teal;
 }
 
-.changeOnSelect {
-    font-size: 28px;
+.intro {
+    font-size: 22px;
 }
 
 .column {
   float: left;
-  width: 33%;
+  width: 31%;
   padding: 10px;
 }
 

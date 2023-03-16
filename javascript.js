@@ -42,36 +42,36 @@ function handleSelectionChange() {
         return;
     }
     let selectedElement = window.getSelection().focusNode.parentElement;
-    switch (selectedElement.id) {
+    switch (selectedElement.id.split(' ')[0] {
         case "textSpacing":
-            changeTextSpacing();
+            changeTextSpacing(selectedElement.id);
             break;
         case "textReverse":
-            reverseText();
+            reverseText(selectedElement.id);
             break;
         case "fontChange":
-            changeFont();
+            changeFont(selectedElement.id);
             break;
         case "colorChange":
-            changeColor();
+            changeColor(selectedElement.id);
             break;
         case "fontSizeChange":
-            changeFontSize();
+            changeFontSize(selectedElement.id);
             break;
         case "backgroundChange":
-            changeBackground();
+            changeBackground(selectedElement.id);
             break;
     }
 }
 
-function changeTextSpacing() {
+function changeTextSpacing(id) {
     let string = window.getSelection().toString();
-    document.getElementById("textSpacing").style.letterSpacing = string.length/2 + "px"
+    document.getElementById(id).style.letterSpacing = string.length/2 + "px"
 }
 
-function reverseText() {
+function reverseText(id) {
     if (window.getSelection().isCollapsed) {
-        document.getElementById("textReverse").innerHTML = "I'm a Northwestern student double majoring in computer science and mathematics."
+        document.getElementById(id).innerHTML = "I'm a Northwestern student double majoring in computer science and mathematics."
         return;
     }
     let text = "I'm a Northwestern student double majoring in computer science and mathematics.";
@@ -85,7 +85,7 @@ function reverseText() {
     copy = copy.reverse();
     copy = copy.join();
     copy = copy.replaceAll(',', '');
-    document.getElementById("textReverse").innerHTML = text.replace(fromText, copy);
+    document.getElementById(id).innerHTML = text.replace(fromText, copy);
 }
 
 let fonts = [];
@@ -99,16 +99,16 @@ fonts.push("'Space Mono', monospace");
 fonts.push("'Poiret One', cursive");
 fonts.push("'Unica One', cursive");
 
-function changeFont() {
+function changeFont(id) {
     let selectionLength = window.getSelection().toString().length;
-    document.getElementById("fontChange").style.fontFamily = fonts[selectionLength % 10];
+    document.getElementById(id).style.fontFamily = fonts[selectionLength % 10];
 }
 
 let colors = ["coral", "cornflowerblue", "darkgoldenrod", "firebrick", "khaki", "orchid", "olivedrab", "yellowgreen", "wheat", "lilac"];
 
-function changeColor() {
+function changeColor(id) {
     let selectionLength = window.getSelection().toString().length;
-    document.getElementById("colorChange").style.color = colors[selectionLength % 10];
+    document.getElementById(id).style.color = colors[selectionLength % 10];
 }
 
 function changeBackground() {
@@ -116,9 +116,9 @@ function changeBackground() {
     document.getElementById("backgroundChange").style.backgroundColor = colors[selectionLength % 10];
 }                
 
-function changeFontSize() {
+function changeFontSize(id) {
     let selectionLength = window.getSelection().toString().length;
-    document.getElementById("fontSizeChange").style.fontSize = 36 + selectionLength/4 + "px";
+    document.getElementById(id).style.fontSize = 36 + selectionLength/4 + "px";
 }
     
 

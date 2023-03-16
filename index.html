@@ -16,10 +16,10 @@
 
         <div id="backgroundClick"></div>
         <div id="mainText">
-            <p id="textSpacing 1" class="changeOnSelect">Hi, I'm Sean Carlson.</p>
-            <p id="textReverse 1" class="changeOnSelect">I'm a Northwestern student double majoring in computer science and mathematics.</p>
-            <p id="fontSizeChange 1" class="changeOnSelect">I had some fun with my website - highlight/select some of these lines of text with your cursor!</p>
-            <p id="fontChange 1" class="changeOnSelect">Here are the projects I've worked on.</p>
+            <p id="textSpacing 1" class="intro">Hi, I'm Sean Carlson.</p>
+            <p id="textReverse 1" class="intro">I'm a Northwestern student double majoring in computer science and mathematics.</p>
+            <p id="fontSizeChange 1" class="intro">I had some fun with my website - highlight/select some of these lines of text with your cursor!</p>
+            <p id="fontChange 1" class="intro">Here are the projects I've worked on.</p>
 
 
             <div id="Projects">
@@ -28,14 +28,14 @@
                     <h2>Class Projects</h2>
                     <button class="dropbtn" onClick = "dropDown('alife')">CS 396: Artificial Life: Generating and evolving random robots for locomotion ▼</button>
                     <div class="dropdown-content" id="alife">
-                        <p id="colorChange 1">To begin CS 396, we got familiar with Pyrosim and set up a codebase for simulating robots. 
+                        <p class="project desc" id="colorChange 1">To begin CS 396, we got familiar with Pyrosim and set up a codebase for simulating robots. 
                         Then, we wrote code to generate random 3D robots, mutate them, and evolve them. Our final project was to conduct an experiment; I chose to test whether
                         the number of parts in a robot's body correlates with its ability to move.</p>
                         <a target="_blank" href="https://github.com/qpalzmz112/ludobots/tree/finalProject">Github link</a>
                     </div>
                     <button class="dropbtn" onClick = "dropDown('algs')">CS 396: Approximation Algorithms: Comparing bin selection methods in a greedy 2-approximation for bin-packing ▼</button>
                     <div class="dropdown-content" id="algs">
-                        <p id="colorChange 2">After learning a greedy 2-approximation for bin-packing, we were asked to implement the algorithm and 
+                        <p class="project desc" id="colorChange 2">After learning a greedy 2-approximation for bin-packing, we were asked to implement the algorithm and 
                         test different bin-selection methods and write a report on our findings.</p>
                         <a href="https://docs.google.com/document/d/1GPSw4bNUiAvlbyrkp29Cs_SbApV0smid0N7VmQYKVoU/edit?usp=sharing">Link</a>
                     </div>
@@ -45,7 +45,7 @@
                     <h2>Other Northwestern Projects</h2>
                     <button class="dropbtn" onClick = "dropDown('tock')">Tock OS: Micro:bit Test App ▼</button>
                     <div class="dropdown-content" id="tock">
-                        <p id="colorChange 3">I met weekly with Professor Ghena, a founder of Tock, to learn about the Tock and embedded systems so that I could develop a test app. 
+                        <p class="project desc" id="colorChange 3">I met weekly with Professor Ghena, a founder of Tock, to learn about the Tock and embedded systems so that I could develop a test app. 
                         The app gives users an easy way to check that Tock is working correctly on the Micro:bit and provides example code for all of the Tock library
                         functions that are supported on the Micro:bit.</p>
                         <a target="_blank" href="https://www.tockos.org/">Tock</a>
@@ -53,7 +53,7 @@
                     </div>
                     <button class="dropbtn" onClick = "dropDown('list')">Northwestern Lab for Internet and Security Technology (LIST): Go + ElasticSearch API script ▼</button>
                     <div class="dropdown-content" id="list">
-                        <p id="colorChange 4">My first project in my internship with LIST was to learn Go and write a script using the ElasticSearch API to query Weavescope data and
+                        <p class="project desc" id="colorChange 4">My first project in my internship with LIST was to learn Go and write a script using the ElasticSearch API to query Weavescope data and
                         re-organize it into its original topology.</p>
                         <a target="_blank" href="http://list.cs.northwestern.edu/">LIST</a>
                     </div>
@@ -63,14 +63,14 @@
                     <h2>Personal Projects</h2>
                     <button class="dropbtn" onClick = "dropDown('wish list')">Google Chrome Extension: Wish List Extension ▼</button>
                     <div class="dropdown-content" id="wish list">
-                        <p>I learned JavaScript, HTML, and CSS so that I could build a Google Chrome Extension. I made the Wish List Extension because 
+                        <p class="project desc" id="colorChange 5">I learned JavaScript, HTML, and CSS so that I could build a Google Chrome Extension. I made the Wish List Extension because 
                         I found it tedious to keep track of many store-specific wishlists on different apps and sites. My extension offers a central location
                         to keep track of wanted items.</p>
                         <a target="_blank" href="https://chrome.google.com/webstore/detail/wish-list-extension/hgaaaecbidkmoabjcobdnfaiojpopohk?hl=en&authuser=0">Link</a>
                     </div>
                     <button class="dropbtn" onClick = "dropDown('spanish')">Google Chrome Extension: Spanish Characters Extension ▼</button>
                     <div class="dropdown-content" id="spanish">
-                        <p>When I was taking Spanish courses, my typing was slowed by having to copy and paste accented letters from the internet. I made this
+                        <p class="project desc" id="colorChange 6">When I was taking Spanish courses, my typing was slowed by having to copy and paste accented letters from the internet. I made this
                         extension so that I wouldn't have to keep looking up "spanish letters" to do this. Although I later found out that Windows supports 
                         typing these characters, the extension has over 700 users that might not know this.</p>
                         <a target="_blank" href="https://chrome.google.com/webstore/detail/spanish-characters-extens/oenjbnfmpdgkbijmdddcdkofhhbonmeb?hl=en&authuser=0">Link</a>
