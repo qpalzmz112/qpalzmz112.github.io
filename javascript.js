@@ -51,7 +51,7 @@ function handleSelectionChange() {
                 document.getElementById(anchor.id).style.color = "darkslateblue";
                 break;
             case "fontSizeChange":
-                document.getElementById(anchor.id).style.fontSize = "28px";
+                document.getElementById(anchor.id).style.fontSize = "22px";
                 break;
             case "backgroundChange":
                 document.getElementById(anchor.id).style.backgroundColor = "white";
