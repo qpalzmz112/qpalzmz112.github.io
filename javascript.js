@@ -2,6 +2,8 @@ document.onselectionchange = () => {
     handleSelectionChange();
 }
 
+let openDropDowns = 0;
+
 let backgroundClick = document.getElementById("backgroundClick");
 backgroundClick.addEventListener("click", () => {
     let dropDowns = document.getElementsByClassName("dropdown-content");
@@ -16,8 +18,20 @@ backgroundClick.addEventListener("click", () => {
 })
 
 function dropDown(id) {
-    backgroundClick.classList.toggle("show");
+    elem = document.getElementById(id);
+    if (elem.classList.contains("show")) {
+        openDropDowns -= 1;
+    } else {
+        openDropDowns += 1;
+    }
     document.getElementById(id).classList.toggle("show");
+
+    if (openDropDowns > 0) {
+        backgroundClick.classList.add("show");
+    }
+    else {
+        backgroundClick.classList.remove("show");
+    }
 }
 
 function handleSelectionChange() {
