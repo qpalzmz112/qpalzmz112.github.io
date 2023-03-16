@@ -27,7 +27,8 @@ body {
 }
 
 h1 {
-    font-size: 22px
+    font-size: 22px;
+    text-align: center;
 }
 
 a {
@@ -59,11 +60,21 @@ p {
   float: left;
   width: 31%;
   padding: 10px;
+  text-align: center;
 }
 
 .dropbtn {
     position: relative;
     z-index: 2;
+    border-radius: 50px;
+    background: white;
+    font-size: 16px;
+    font-family: math;
+    padding: 7px;
+}
+
+.dropbtn:hover {
+    background: lightgray;
 }
 
 .dropdown-content {
