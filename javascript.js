@@ -6,8 +6,8 @@ window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) 
   let dropDowns = document.getElementsByClassName("dropdown-content");
   for (let i = 0; i < dropDowns.length; i++) {
-      if (dropDowns.item(i).classList.contains('show')) {
-          dropDowns.item(i).classList.remove('show');
+      if (dropDowns[i].classList.contains('show')) {
+          dropDowns[i].classList.remove('show');
       }
   }
 }
