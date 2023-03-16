@@ -2,6 +2,11 @@ document.onselectionchange = () => {
     handleSelectionChange();
 }
 
+
+function dropDown(id) {
+    document.getElementById(id).classList.toggle("show");
+}
+
 function handleSelectionChange() {
     if (window.getSelection().isCollapsed) {
         let anchor = window.getSelection().anchorNode.parentElement;
@@ -66,7 +71,7 @@ function reverseText() {
         return;
     }
     let fromText = text.slice(0, selection.length);
-    let copy = fromText.slice() // make a copy of fromText
+    let copy = fromText.slice() 
     copy = copy.split("");
     copy = copy.reverse();
     copy = copy.join();

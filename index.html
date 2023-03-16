@@ -13,25 +13,33 @@
                 <a id="email" target="_blank" href="mailto:wseancarlson112@gmail.com">SeanCarlson112@gmail.com</a>
             </div>
         </div>
+
         <div id="mainText">
             <p id="textSpacing" class="changeOnSelect">Hi, I'm Sean Carlson.</p>
             <p id="textReverse" class="changeOnSelect">I'm a Northwestern student double majoring in computer science and mathematics.</p>
-            <p id="fontChange" class="changeOnSelect">I've worked with C, C++, Python, Go, Javascript, Rust, and Racket.</p>
-            <p id="colorChange" class="changeOnSelect">
-                I've published two Google Chrome extensions. My first one is
-                <a target="_blank" href="https://chrome.google.com/webstore/detail/wish-list-extension/hgaaaecbidkmoabjcobdnfaiojpopohk">Wish List Extension</a>,
-                which allows users to create, modify, and delete wishlists and entries. The second is 
-                <a target="_blank" href="https://chrome.google.com/webstore/detail/spanish-characters-extens/oenjbnfmpdgkbijmdddcdkofhhbonmeb?hl=en&authuser=0">Spanish Characters Extension</a>,
-                a simple tool to copy accented letters which has ove 300 users.
-            </p>
-            <p id="backgroundChange" class="changeOnSelect">
-                More recently, I interned at the 
-                <a target="_blank" href="http://list.cs.northwestern.edu/">Northwestern Lab for Internet and Security Technology</a>,
-                working with Go, cloud-native technology, and containers. I'm also working on some contributions to 
-                <a target="_blank" href="https://github.com/tock/tock">Tock OS</a>,
-                including additions to both the OS and its libraries.
-            </p>
             <p id="fontSizeChange" class="changeOnSelect">I had some fun with my website - highlight/select some of these lines of text with your cursor!</p>
+            <p id="fontChange" class="changeOnSelect">Here are the projects I've worked on.</p>
+
+            <div id="Projects">
+                <div class="column">Class Projects</div>
+                    <button class="dropbtn" onClick = "dropDown("alife")">CS 396: Artificial Life: Generating and evolving random robots for locomotion ▼</button>
+                    <div class="dropdown-content" id="alife">
+                        <p>To begin CS 396, we got familiar with Pyrosim and set up a codebase for simulating robots. 
+                        Then, we wrote code to generate random 3D robots, mutate them, and evolve them. Our final project was to conduct an experiment; I chose to test whether
+                        the number of parts in a robot's body correlates with its ability to move.</p>
+                        <a href="https://github.com/qpalzmz112/ludobots/tree/finalProject">Github link</a>
+                    </div>
+                    <button class="dropbtn" onClick = "dropDown("algs")">CS 396: Approximation Algorithms: Comparing bin selection methods in a greedy 2-approximation for bin-packing ▼</button>
+                    <div class="dropdown-content" id="algs">
+                        <p>After learning a greedy 2-approximation for bin-packing, we were asked to implement the algorithm and 
+                        test different bin-selection methods and write a report on our findings.</p>
+                        <a href="https://docs.google.com/document/d/1GPSw4bNUiAvlbyrkp29Cs_SbApV0smid0N7VmQYKVoU/edit?usp=sharing">Link</a>
+                    </div>
+
+                <div class="column">Other Northwestern Projects</div>
+                <div class="column">Personal Projects</div>
+            </div>
+
         </div>
         <script src="javascript.js"></script>
     </body>
