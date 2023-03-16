@@ -136,7 +136,7 @@ function changeBackground() {
 
 function changeFontSize(id) {
     let selectionLength = window.getSelection().toString().length;
-    document.getElementById(id).style.fontSize = 36 + selectionLength/4 + "px";
+    document.getElementById(id).style.fontSize = 22 + selectionLength/4 + "px";
 }
     
 
