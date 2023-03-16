@@ -25,11 +25,17 @@ body {
     background: white;
     color: darkslateblue;  
 }
+
+h1 {
+    font-size: 22px
+}
+
 a {
     color: teal;
 }
 
 .project-link {
+    display: block;
     margin: 20px;
 }
 
@@ -58,17 +64,17 @@ p {
   z-index: 2;
 }
 
-.show {
-  display: block;
-}
-
 #backgroundClick {
-    visibility: hidden;
+    display: none
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
+}
+
+.show {
+  display: block;
 }
 

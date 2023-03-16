@@ -13,6 +13,7 @@ backgroundClick.addEventListener("click", () => {
 })
 
 function dropDown(id) {
+    document.getElementById("backgroundClick").classList.toggle("show");
     document.getElementById(id).classList.toggle("show");
 }
 
