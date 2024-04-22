@@ -1,9 +1,8 @@
-import { BackgroundImage, Header, ExperienceTab } from "../index.js";
+import { Header, ExperienceTab } from "../index.js";
 
 export default function Home() {
   return (
-    <main className="absolute h-screen w-screen font-playfair text-black">
-      <BackgroundImage />
+    <main className="bg-gradient-to-t from-white to-sand-green absolute h-screen w-screen font-playfair text-black">
       <Header />
       <div className="grid grid-cols-2 gap-4 p-4">
         <ExperienceTab

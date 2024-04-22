@@ -4,9 +4,11 @@ import { useState } from "react";
 
 function DropdownListLink(props) {
   return (
-    <Link href={props.href} className="block px-5 py-2">
-      {props.text}
-    </Link>
+    <div className="hover:text-gray-500 border-gray-300 first:border-b-2 last:border-t-2">
+      <Link href={props.href} className="block px-5 py-2 text-xl">
+        {props.text}
+      </Link>
+    </div>
   );
 }
 
@@ -22,7 +24,11 @@ export default function DropdownList() {
         setMouseOver(false);
       }}
     >
-      <button className="inline-block text-2xl px-5 py-2">
+      <button
+        className={`inline-block text-2xl px-5 py-2 ${
+          mouseOver ? "text-gray-500" : ""
+        }`}
+      >
         <h1>Hobby Showcases</h1>
       </button>
 
