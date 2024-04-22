@@ -4,7 +4,7 @@ import DropdownList from "./DropdownList.js";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 bg-sand-green text-black">
+    <header className={`sticky top-0 bg-sand-green text-black`}>
       <nav>
         <HeaderLink path="/" text="Home" />
         <HeaderLink path="/experience" text="Experience" />
