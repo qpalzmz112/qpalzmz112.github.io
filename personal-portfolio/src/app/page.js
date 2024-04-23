@@ -1,10 +1,9 @@
-import { Header } from "./index.js";
+import { Boilerplate } from "./index.js";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-gradient-to-t from-white to-sand-green absolute h-screen w-screen font-playfair text-black">
-      <Header />
+    <Boilerplate>
       <div className="h-max flex justify-center">
         <div className="pt-40 pr-24">
           <h1 className="text-7xl font-medium pl-3 pt-1">Sean Carlson</h1>
@@ -25,9 +24,10 @@ export default function Home() {
             alt="Photo of Sean"
             width={500}
             height={500}
+            priority
           />
         </div>
       </div>
-    </main>
+    </Boilerplate>
   );
 }

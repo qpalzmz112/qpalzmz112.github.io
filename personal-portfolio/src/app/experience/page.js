@@ -1,9 +1,8 @@
-import { Header, ExperienceTab } from "../index.js";
+import { Boilerplate, ExperienceTab, ColorContext } from "../index.js";
 
 export default function Home() {
   return (
-    <main className="bg-gradient-to-t from-white to-sand-green absolute h-screen w-screen font-playfair text-black">
-      <Header />
+    <Boilerplate>
       <div className="grid grid-cols-2 gap-4 p-4">
         <ExperienceTab
           title="Xenobot Lab"
@@ -22,6 +21,6 @@ export default function Home() {
           description="At LIST, my responsibilities included using Go and the Elasticsearch API to write a data-querying script and modifying an open source program to run in a container."
         />
       </div>
-    </main>
+    </Boilerplate>
   );
 }

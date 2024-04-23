@@ -1,11 +1,18 @@
-import { Header, ProjectTab } from "../index.js";
+"use client";
+import {
+  Boilerplate,
+  ProjectTab,
+  ColorContext,
+  ColorObjects,
+} from "../index.js";
 import projects from "./projects-info.js";
+import { useContext } from "react";
 
 export default function Home() {
+  const { color } = useContext(ColorContext);
   return (
-    <main className="absolute overflow-x-hidden h-screen w-screen font-playfair text-black">
-      <Header />
-      <div className="bg-gradient-to-t from-white to-sand-green grid grid-cols-3 grid-rows-3 gap-4 p-4">
+    <Boilerplate>
+      <div className="grid grid-cols-3 grid-rows-3 gap-4 p-4">
         {projects.map((project) => (
           <ProjectTab
             key={project.title}
@@ -21,6 +28,6 @@ export default function Home() {
           />
         ))}
       </div>
-    </main>
+    </Boilerplate>
   );
 }

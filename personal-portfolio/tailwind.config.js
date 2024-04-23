@@ -8,10 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "sand-green": "#A0BCAC",
+        "lego-sand-green": "#A0BCAC",
         "lego-green": "#009247",
-        "lego-dark-orange": "#A65322",
         "lego-sand-blue": "#678297",
+        "lego-dark-azure": "#00A3DA",
+        "lego-sand-red": "#D67572",
+        "lego-dark-red": "#7F131B",
       },
       fontFamily: {
         playfair: ["Playfair", "serif"],

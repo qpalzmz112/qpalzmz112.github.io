@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Sean Carlson's Personal Portfolio",
   description: "Made with Next.js",
+  icons: "/saturn-orbit.svg",
 };
 
 export default function RootLayout({ children }) {
