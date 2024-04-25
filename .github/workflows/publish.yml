@@ -47,6 +47,7 @@ jobs:
             exit 0
           else
             echo "${{ github.workspace }}"
+            echo "$(ls)"
             echo "Unable to determine package manager"
             exit 1
           fi
