@@ -14,7 +14,7 @@ export default function Boilerplate({ children }) {
     if (col) {
       setColorState(col);
     }
-  });
+  }, []);
 
   let colors = {
     "lego-sand-green": "to-lego-sand-green",

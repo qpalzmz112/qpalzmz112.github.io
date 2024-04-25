@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <Boilerplate>
       <div className="p-4 text-xl">
-        These are some of the piano songs I've been playing.
+        These are some of the piano songs I&apos;ve been playing.
       </div>
       <div className="grid grid-cols-4 gap-4 p-4">
         {songs.map((song) => (

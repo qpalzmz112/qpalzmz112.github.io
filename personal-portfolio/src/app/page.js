@@ -11,8 +11,8 @@ export default function Home() {
             Software Engineer
           </h3>
           <p className="p-3 max-w-2xl text-lg">
-            I'm graduating from Northwestern University with a double major in
-            computer science and math. I love writing software, and find
+            I&apos;m graduating from Northwestern University with a double major
+            in computer science and math. I love writing software, and find
             satisfaction in paying attention to even the tiniest details to make
             the best user experience possible.
           </p>

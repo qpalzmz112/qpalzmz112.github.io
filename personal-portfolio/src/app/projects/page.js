@@ -1,15 +1,8 @@
 "use client";
-import {
-  Boilerplate,
-  ProjectTab,
-  ColorContext,
-  ColorObjects,
-} from "../index.js";
+import { Boilerplate, ProjectTab } from "../index.js";
 import projects from "./projects-info.js";
-import { useContext } from "react";
 
 export default function Home() {
-  const { color } = useContext(ColorContext);
   return (
     <Boilerplate>
       <div className="grid grid-cols-3 grid-rows-3 gap-4 p-4">
