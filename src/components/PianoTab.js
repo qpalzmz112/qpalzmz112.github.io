@@ -6,9 +6,7 @@ export default function PianoTab(props) {
       <div className="p-2">
         <h1 className="block text-3xl">{props.name}</h1>
         <h3 className="block text-xl text-gray-600">{props.composer}</h3>
-        {props.description ? (
-          <p className="block">{props.description}</p>
-        ) : null}
+        {props.desc ? <p className="block">{props.desc}</p> : null}
         {props.videoId ? (
           <YoutubeEmbed
             title={props.title}

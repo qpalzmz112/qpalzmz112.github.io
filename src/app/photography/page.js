@@ -1,9 +1,9 @@
-import { Boilerplate } from "../index.js";
+import { Boilerplate, InfoText } from "../index.js";
 
 export default function Home() {
   return (
     <Boilerplate>
-      To be completed.
+      <InfoText>To be completed.</InfoText>
       <div className="grid grid-cols-4 gap-4 p-4"></div>
     </Boilerplate>
   );
