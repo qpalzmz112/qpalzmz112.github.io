@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Boilerplate>
       <InfoText>
-        Here are some of my favorite pictures that I've taken.
+        Here are some of my favorite pictures that I&apos;ve taken.
       </InfoText>
       <div className="grid grid-cols-3 gap-4 p-4">
         {Object.keys(photoSets).map((key) => {
