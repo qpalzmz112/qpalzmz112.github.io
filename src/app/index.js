@@ -4,4 +4,6 @@ export { default as ProjectTab } from "../components/ProjectTab.js";
 export { default as PianoTab } from "../components/PianoTab.js";
 export { default as Boilerplate } from "../components/Boilerplate.js";
 export { default as InfoText } from "../components/InfoText.js";
+export { default as PhotoTab } from "../components/PhotoTab.js";
+export { default as PhotoGallery } from "../components/PhotoGallery.js";
 export { ColorContext as ColorContext } from "./colorContext.js";

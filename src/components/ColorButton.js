@@ -26,7 +26,7 @@ export default function ColorButton() {
   const [mouseOver, setMouseOver] = useState(false);
   return (
     <div
-      className={`grid mx-5 place-items-center absolute rounded-full ${
+      className={`grid place-items-center absolute rounded-full ${
         mouseOver ? "bg-gray-200" : ""
       } right-14 top-2 inline-block hover:cursor-pointer`}
       onMouseLeave={() => {
