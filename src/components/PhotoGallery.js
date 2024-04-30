@@ -44,5 +44,3 @@ export default function PhotoGallery(props) {
     </div>
   );
 }
-// fullscreen state: value = img name
-// if fullscreen, have gallery only render that clickableimg

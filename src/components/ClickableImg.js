@@ -27,7 +27,7 @@ export default function ClickableImg(props) {
       }
     >
       {fullscreen && props.updateFullscreen ? null : (
-        <img src={props.src} className="h-32" />
+        <img src={props.src} className="h-64" />
       )}
       {fullscreen ? (
         <>
@@ -43,7 +43,7 @@ export default function ClickableImg(props) {
       {mouseOver && !fullscreen ? (
         <img
           src="/full-screen.svg"
-          className="h-32 absolute top-0 opacity-60"
+          className="h-64 absolute top-0 opacity-60"
         />
       ) : null}
     </div>

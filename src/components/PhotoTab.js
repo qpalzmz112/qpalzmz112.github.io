@@ -31,7 +31,9 @@ export default function PhotoTab(props) {
         {props.date ? (
           <h4 className="block text-xl text-gray-600">{props.date}</h4>
         ) : null}
-        <h5 className="block text-xl text-gray-600 pb-2">{`${props.imgNames.length} Photos`}</h5>
+        <h5 className="block text-xl text-gray-600 pb-2">{`${
+          props.imgNames.length
+        } Photo${props.imgNames.length > 1 ? "s" : ""}`}</h5>
         <div className="relative flex justify-center">
           <ClickableImg
             src={props.basePath + props.imgNames[currPhotoIndex]}
