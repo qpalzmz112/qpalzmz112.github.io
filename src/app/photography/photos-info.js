@@ -21,6 +21,25 @@ let photoSets = {
       "yellow-bird.jpg",
     ],
   }),
+  Garfield: new PhotoSet({
+    title: "Garfield Park Conservatory",
+    location: "Indianapolis, IN",
+    date: "3/21/2023",
+    basePath: "/photography-page/garfield/",
+    imgNames: [
+      "buddha-belly.jpg",
+      "orange-flame-justica.jpg",
+      "pink-plant.jpg",
+      "powder-puff-tree.jpg",
+    ],
+  }),
+  Pond: new PhotoSet({
+    title: "Blue Pond",
+    location: "Golconda, IL",
+    date: "3/24/2023",
+    basePath: "/photography-page/pond/",
+    imgNames: ["blue-pond.jpg"],
+  }),
   Colorado: new PhotoSet({
     title: "Colorado Mountains",
     location: "Colorado",
@@ -32,7 +51,7 @@ let photoSets = {
     title: "Old Barn",
     location: "Wadena, MN",
     date: "8/11/2020",
-    basePath: "/photography-page/",
+    basePath: "/photography-page/barn/",
     imgNames: ["barn.jpg"],
   }),
 };

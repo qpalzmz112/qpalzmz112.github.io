@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 ${colors[color]} text-black border-b-2 border-gray-300`}
+      className={`sticky top-0 ${colors[color]} text-black border-b-2 border-gray-300 z-10`}
     >
       <nav>
         <HeaderLink path="/" text="Home" />

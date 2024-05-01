@@ -8,7 +8,7 @@ export default function PhotoGallery(props) {
   return (
     <div className="absolute h-screen w-screen top-0 left-0 p-16 grid grid-cols-3 grid-rows-3 place-items-center gap-4">
       <div
-        className="absolute bg-gray-900/85 w-full h-full"
+        className="fixed top-0 left-0 bg-gray-900/85 w-full min-h-full z-20"
         onClick={props.closeGallery}
       />
       {props.imgNames.map((name) => {
