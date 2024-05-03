@@ -16,15 +16,9 @@ export default function Boilerplate({ children }) {
     }
   }, []);
 
-  let colors = {
-    "lego-sand-green": "to-lego-sand-green",
-    "lego-sand-blue": "to-lego-sand-blue",
-    "lego-sand-red": "to-lego-sand-red",
-  };
-
   return (
     <main
-      className={`bg-gradient-to-t from-white ${colors[colorState]} absolute min-h-screen w-screen font-playfair text-black`}
+      className={`bg-gradient-to-t from-white to-${colorState} absolute min-h-screen w-screen font-playfair text-black`}
     >
       <ColorContext.Provider
         value={{ color: colorState, switchColor: switchColor }}
