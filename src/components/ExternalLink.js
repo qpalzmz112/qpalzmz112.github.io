@@ -8,7 +8,7 @@ export default function ExternalLink(props) {
 
   return (
     <Link
-      className={`text-${color} block underline hover:text-${Colors[color]} ${props.className}`}
+      className={`text-${color} block underline hover:text-${Colors[color].secondaryColor} ${props.className}`}
       href={props.href}
       target="_blank"
     >
