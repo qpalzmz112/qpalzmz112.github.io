@@ -1,12 +1,6 @@
 "use client";
-import { ColorContext } from "../app/index.js";
+import { ColorContext, Colors } from "../app/index.js";
 import { useContext, useState } from "react";
-
-let colors = {
-  "lego-sand-green": "bg-lego-sand-green",
-  "lego-sand-blue": "bg-lego-sand-blue",
-  "lego-sand-red": "bg-lego-sand-red",
-};
 
 function Color({ color }) {
   const { switchColor } = useContext(ColorContext);
@@ -15,10 +9,7 @@ function Color({ color }) {
     localStorage.setItem("color", JSON.stringify(color));
   };
   return (
-    <div
-      onClick={fun}
-      className={`${colors[color]} h-16 w-16 rounded-full m-1`}
-    />
+    <div onClick={fun} className={`bg-${color} h-16 w-16 rounded-full m-1`} />
   );
 }
 
@@ -52,7 +43,7 @@ export default function ColorButton() {
       <div
         className={`${mouseOver ? "visible" : "collapse"} focus:outline-none`}
       >
-        {Object.keys(colors).map((color) => (
+        {Object.keys(Colors).map((color) => (
           <Color key={color} color={color} />
         ))}
       </div>

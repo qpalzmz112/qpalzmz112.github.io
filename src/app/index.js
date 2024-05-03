@@ -7,3 +7,4 @@ export { default as InfoText } from "../components/InfoText.js";
 export { default as PhotoTab } from "../components/PhotoTab.js";
 export { default as PhotoGallery } from "../components/PhotoGallery.js";
 export { ColorContext as ColorContext } from "./colorContext.js";
+export { default as Colors } from "./colors.js";

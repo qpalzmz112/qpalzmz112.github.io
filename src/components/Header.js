@@ -7,15 +7,10 @@ import { ColorContext } from "../app/index.js";
 
 export default function Header() {
   const { color } = useContext(ColorContext);
-  let colors = {
-    "lego-sand-green": "bg-lego-sand-green",
-    "lego-sand-blue": "bg-lego-sand-blue",
-    "lego-sand-red": "bg-lego-sand-red",
-  };
 
   return (
     <header
-      className={`sticky top-0 ${colors[color]} text-black border-b-2 border-gray-300 z-10`}
+      className={`sticky top-0 bg-${color} text-black border-b-2 border-gray-300 z-10`}
     >
       <nav>
         <HeaderLink path="/" text="Home" />
