@@ -50,7 +50,7 @@ export default function ClickableImg(props) {
       {mouseOver && !fullscreen ? (
         <img
           src="/full-screen.svg"
-          className="h-full max-h-64 absolute top-0 opacity-60"
+          className="h-full max-h-64 absolute top-0 opacity-60 z-20"
         />
       ) : null}
     </div>
