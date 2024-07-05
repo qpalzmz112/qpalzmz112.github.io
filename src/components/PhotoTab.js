@@ -6,7 +6,7 @@ function CarouselButton({ onClick, dir }) {
   return (
     <button
       className={`${
-        dir == "right" ? "right-0" : "left-0"
+        dir == "right" ? "-right-7" : "-left-7"
       } absolute top-0 w-1/12 hover:bg-gray-600/50 h-full`}
       onClick={onClick}
     >

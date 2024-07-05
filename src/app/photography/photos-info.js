@@ -10,6 +10,13 @@ class PhotoSet {
 
 // photoSets is exported
 let photoSets = {
+  Green: new PhotoSet({
+    title: "Green River Conservatory",
+    location: "Illinois",
+    date: "09/15/2023",
+    basePath: "/photography-page/green-river/",
+    imgNames: ["sky.jpg", "windmill-light.jpg", "red-sky.jpg"],
+  }),
   Como: new PhotoSet({
     title: "Como Conservatory and Zoo",
     location: "St. Paul, MN",

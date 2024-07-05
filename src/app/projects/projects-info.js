@@ -25,6 +25,13 @@ class Project {
 // projects is exported
 let projects = [
   new Project({
+    title: "Kitchen Tracker",
+    year: "2024",
+    desc: "Kitchen Tracker is an app I made with React Native and Expo, styled with Nativewind. It offers three interconnected lists: shopping list, ingredients, and recipes, and has customizable reminders for food that is going to expire.",
+    baseIconPath: "/project-icons/kitchen-tracker/",
+    iconNames: ["react-native.png", "expo.png"],
+  }),
+  new Project({
     title: "Star Collector",
     year: "2024",
     desc: "Star Collector is a Unity game I made with two other students for CS 377: Game Development Studio. The game is a space-themed platformer with various mechanics in each level.",

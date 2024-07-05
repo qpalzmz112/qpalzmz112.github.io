@@ -28,7 +28,7 @@ class Experience {
 let experiences = [
   new Experience({
     title: "Xenobot Lab",
-    posiiton: "Software Development Intern",
+    position: "Software Development Intern",
     dateRange: "04/2023-08/2023",
     desc: "With Xenobot Lab, I developedText2Lego: a Python program that converts images to buildable Lego designs. Text2Lego uses the Python module Pillow for image processing and uses the physics simulator MuJoCo to simulate the Lego designs for testing.",
     link1: "https://www.xenobot.group/",
@@ -39,8 +39,16 @@ let experiences = [
     iconNames: ["pillow.jpg"],
   }),
   new Experience({
+    title: "Northwestern University",
+    position: "Calculus Study Group Leader",
+    dateRange: "09/2022-06/2023",
+    desc: "Each quarter of my junior year, I led a weekly study group for students taking multivariable calculus.",
+    baseIconPath: "/experience-icons/",
+    iconNames: ["calculus.png"],
+  }),
+  new Experience({
     title: "Northwestern Lab for Internet and Security Technology (LIST)",
-    posiiton: "Cloud-Native Security Project Intern",
+    position: "Cloud-Native Security Project Intern",
     dateRange: "06/2022-09/2022",
     desc: "At LIST, my responsibilities included using Go and the Elasticsearch API to write a data-querying script and modifying an open source program to run in a container.",
     baseIconPath: "/experience-icons/",
