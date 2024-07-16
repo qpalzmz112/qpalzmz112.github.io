@@ -30,6 +30,9 @@ let projects = [
     desc: "Kitchen Tracker is an app I made with React Native and Expo, styled with Nativewind. It offers three interconnected lists: shopping list, ingredients, and recipes, and has customizable reminders for food that is going to expire.",
     baseIconPath: "/project-icons/kitchen-tracker/",
     iconNames: ["react-native.png", "expo.png"],
+    link1:
+      "https://play.google.com/store/apps/details?id=com.qpalzm112.PantryManager&pli=1",
+    link1Text: "Play Store Listing",
   }),
   new Project({
     title: "Star Collector",
