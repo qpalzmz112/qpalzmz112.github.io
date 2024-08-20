@@ -25,6 +25,15 @@ class Project {
 // projects is exported
 let projects = [
   new Project({
+    title: "Volatility3 Contributor",
+    year: "2024",
+    desc: "Volatility3 is the most popular memory forensics framework used by cybersecurity professionals. Volatility's functionality comes from plugins, and I developed a plugin called PsXView. This plugin enumerates processes in a memory dump using multiple methods, which allows investigators to identify process that have used direct kernel object manipulation to conceal themselves.",
+    baseIconPath: "/project-icons/",
+    iconNames: ["vol.png"],
+    link1: "https://github.com/volatilityfoundation/volatility3",
+    link1Text: "Volatility3 GitHub",
+  }),
+  new Project({
     title: "Kitchen Tracker",
     year: "2024",
     desc: "Kitchen Tracker is an app I made with React Native and Expo, styled with Nativewind. It offers three interconnected lists: shopping list, ingredients, and recipes, and has customizable reminders for food that is going to expire.",
@@ -61,16 +70,6 @@ let projects = [
     link2Text: "Github Link",
     baseIconPath: "/project-icons/",
     iconNames: ["python.jpg"],
-  }),
-  new Project({
-    title: "Approximation Algorithm Comparison",
-    year: "2023",
-    desc: "For CS 396: Approximation Algorithms, I implemented a well-known approximation algorithm to solve the bin packing problem. Then, I tested four bin selection methods and reported my findings.",
-    link1:
-      "https://docs.google.com/document/d/1GPSw4bNUiAvlbyrkp29Cs_SbApV0smid0N7VmQYKVoU/edit",
-    link1Text: "Write Up",
-    baseIconPath: "/project-icons/",
-    iconNames: ["algorithm.png"],
   }),
   new Project({
     title: "Tock OS: Micro:Bit Test App",
