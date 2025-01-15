@@ -34,9 +34,9 @@ export default function DropdownList() {
 
       {mouseOver ? (
         <div className="absolute inset-x-0 mx-auto w-max rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <DropdownListLink href="/photography" text="Photography" />
           <DropdownListLink href="/piano" text="Piano" />
           <DropdownListLink href="/lego" text="Custom Lego Builds" />
-          <DropdownListLink href="/photography" text="Photography" />
         </div>
       ) : null}
     </div>

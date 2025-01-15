@@ -27,6 +27,14 @@ class Experience {
 // experiences is exported
 let experiences = [
   new Experience({
+    title: "Epic Systems",
+    position: "Cybersecurity Engineer",
+    dateRange: "11/2024-Present",
+    desc: "At Epic, I'm working to manage and expand our infrastructure for Splunk and SOAR (Security Orchestration, Automation, and Response), which are key to monitoring and alerting for the hundreds of healthcare organizations who rely on Epic Hosting to host their infrastructure.",
+    baseIconPath: "/experience-icons/",
+    iconNames: ["epic.png"],
+  }),
+  new Experience({
     title: "Xenobot Lab",
     position: "Software Development Intern",
     dateRange: "04/2023-08/2023",
